@@ -18,7 +18,8 @@
     "hyperscript": "~1.1.0",
     "shoe": "0.0.10",
     "reconnect": "~1.1.1",
-    "level-manifest": "~1.1.1"
+    "level-manifest": "~1.1.1",
+    "padded-semver": "~1.1.1"
   },
   "bin": "./index.js",
   "devDependencies": {},
