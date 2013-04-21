@@ -19,7 +19,8 @@
     "shoe": "0.0.10",
     "reconnect": "~1.1.1",
     "level-manifest": "~1.1.1",
-    "padded-semver": "~1.1.1"
+    "padded-semver": "~1.1.1",
+    "multilevel": "~3.0.0"
   },
   "bin": "./index.js",
   "devDependencies": {},
