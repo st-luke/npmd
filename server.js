@@ -1,13 +1,15 @@
+#!/usr/bin/env node
 
-var shoe       = require('shoe')
-var ecstatic   = require('ecstatic')
-var http       = require('http')
-var multilevel = require('multilevel')
-var manifest   = require('level-manifest')
-var fs         = require('fs')
-var path       = require('path')
+var shoe            = require('shoe')
+var ecstatic        = require('ecstatic')
+var http            = require('http')
+var multilevel      = require('multilevel')
+var manifest        = require('level-manifest')
+var fs              = require('fs')
+var path            = require('path')
+var levelCouchSync  = require('./')
 
-var db         = require('./')(path.join(process.env.HOME, '.npmd'))
+var db              = levelCouchSync(path.join(process.env.HOME, '.npmd'))
 
 fs.writeFileSync('./manifest.json', JSON.stringify(manifest(db, true), null, 2))
 
